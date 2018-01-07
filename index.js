@@ -26,7 +26,7 @@ function viewCart() {
     console.log("Your shopping cart is empty.");
   } else if (cart.length === 1) {
     let key = Object.keys(cart[0])[0];
-    word += `${key} at $${cart[0][key]}.`;
+    word += ` ${key} at $${cart[0][key]}.`;
     console.log(word);
   } else if (cart.length === 2) {
     for (let i = 0; i < cart.length; i++) {
