@@ -46,7 +46,7 @@ function viewCart() {
       } else {
         word += ` and ${key} at $${cart[i][key]}.`;
       }
-      return word;
+      console.log(word);
     }
   }
 }
