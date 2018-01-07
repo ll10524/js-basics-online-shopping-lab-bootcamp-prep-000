@@ -59,6 +59,7 @@ function total() {
     let key = Object.keys(curr)[0];
     sum += curr[key];
   }
+  return sum;
 }
 
 function removeFromCart(item) {
