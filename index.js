@@ -65,14 +65,12 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for (let i = 0; i < cart.length; i++) {
-    let key = Object.keys(cart)[0];
-    if (key === item) {
+    let object = cart[0];
+    if (object.hasOwnProperty(item)) {
       
     }
   }
-  
-    
-  }
+  return 
 }
 
 function placeOrder(cardNumber) {
