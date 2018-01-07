@@ -23,11 +23,11 @@ function viewCart() {
   // write your code here
   let word = "In your cart, you have";
   if (cart.length === 0) {
-    return "Your shopping cart is empty.";
+    console.log("Your shopping cart is empty.");
   } else if (cart.length === 1) {
     let key = Object.keys(cart[0])[0];
     word += `${key} at $${cart[0][key]}.`;
-    return word;
+    console.log(word);
   } else if (cart.length === 2) {
     for (let i = 0; i < cart.length; i++) {
       let key = Object.keys(cart[i])[0];
@@ -36,7 +36,7 @@ function viewCart() {
       } else {
         word += ` and ${key} at $${cart[i][key]}.`;
       }
-      return word;
+      console.log(word);
     }
   } else {
     for (let i = 0; i < cart.length; i++) {
