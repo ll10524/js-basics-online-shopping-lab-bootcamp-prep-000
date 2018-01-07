@@ -53,6 +53,12 @@ function viewCart() {
 
 function total() {
   // write your code here
+  let sum = 0;
+  for (let i = 0; i < cart.length; i++) {
+    let curr = cart[i];
+    let key = Object.keys(curr)[0];
+    sum += curr[key];
+  }
 }
 
 function removeFromCart(item) {
