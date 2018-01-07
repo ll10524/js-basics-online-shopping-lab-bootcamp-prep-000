@@ -64,7 +64,8 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if (cart.contains) {
+  
+  if (cart.inculdes(item)) {
     
   }
 }
